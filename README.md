@@ -8,17 +8,17 @@ This is a Django application that allows users to log in with their social media
 2. Create a virtual environment and activate it.
 3. Install the dependencies by running the following command:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 
 4. Migrate the database by running the following command:
 
-python manage.py migrate
+`python manage.py migrate`
 
 
 5. Run the development server by running the following command:
 
-python manage.py runserver
+`python manage.py runserver`
 
 The development server will be running on port 8000. You can access the application at http://localhost:8000.
 
@@ -50,9 +50,5 @@ By following these steps, I can help to mitigate the damage caused by a data bre
 Icebox ideas:
  - Add SSO (I commeted out the SSO Code because I couldn't complete it)
 
-
-
-Future 
-
-Author
+**Author**
 This application was created by David Hinton.
