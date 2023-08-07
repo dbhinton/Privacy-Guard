@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.contrib import auth
+# from django.contrib import auth
 # from social_django.urls import urlpatterns as social_django_urlpatterns
 
 
@@ -23,8 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('django.contrib.auth.urls')),  # Built-in authentication views
     path('privacy_guard/', include('privacy_guard_app.urls')),
-    path('accounts/login/', auth.views.LoginView.as_view(), name='login'),
-    path('accounts/logout/', auth.views.LogoutView.as_view(), name='logout'),
+    # path('accounts/login/', auth.views.LoginView.as_view(), name='login'),
+    # path('accounts/logout/', auth.views.LogoutView.as_view(), name='logout'),
     # Add other app URLs as needed
 ]
 
