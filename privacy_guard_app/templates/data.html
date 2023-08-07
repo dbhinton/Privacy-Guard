@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Download Data</title>
+</head>
+<body>
+    <h1>Download Your Data</h1>
+    <p>You can download/delete your data by entering your email and clicking the relevant button below.</p>
+    <form action="{% url 'download_data' %}" method="post">
+        {% csrf_token %}
+        <input type="email" name="email" placeholder="Email address">
+        <button type="submit">Download Data</button>
+    </form>
+    <form action="{% url 'delete_data' %}" method="post">
+        {% csrf_token %}
+        <input type="email" name="email" placeholder="Email address">
+        <button type="submit">Delete Data</button>
+    </form>
+
+    {% if success %}
+        <div class="alert alert-success">
+            {{ success }}
+        </div>
+    {% endif %}
+</body>
+</html>
